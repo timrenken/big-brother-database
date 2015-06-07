@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :seasons
+
+  resources :houseguests
+
   root 'pages#home'
 
   get 'pages/map'

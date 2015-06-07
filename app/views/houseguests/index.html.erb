@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Houseguests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Age</th>
+      <th>Occupation</th>
+      <th>Season</th>
+      <th>Placed</th>
+      <th>Votes against</th>
+      <th>Votes to win</th>
+      <th>Hoh</th>
+      <th>Nominated</th>
+      <th>Veto</th>
+      <th>Botb</th>
+      <th>Have not</th>
+      <th>First day</th>
+      <th>Last day</th>
+      <th>Prizes</th>
+      <th>Jury</th>
+      <th>Expelled</th>
+      <th>Walked</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @houseguests.each do |houseguest| %>
+      <tr>
+        <td><%= houseguest.name %></td>
+        <td><%= houseguest.location %></td>
+        <td><%= houseguest.latitude %></td>
+        <td><%= houseguest.longitude %></td>
+        <td><%= houseguest.age %></td>
+        <td><%= houseguest.occupation %></td>
+        <td><%= houseguest.season_id %></td>
+        <td><%= houseguest.placed %></td>
+        <td><%= houseguest.votes_against %></td>
+        <td><%= houseguest.votes_to_win %></td>
+        <td><%= houseguest.hoh %></td>
+        <td><%= houseguest.nominated %></td>
+        <td><%= houseguest.veto %></td>
+        <td><%= houseguest.botb %></td>
+        <td><%= houseguest.have_not %></td>
+        <td><%= houseguest.first_day %></td>
+        <td><%= houseguest.last_day %></td>
+        <td><%= houseguest.prizes %></td>
+        <td><%= houseguest.jury %></td>
+        <td><%= houseguest.expelled %></td>
+        <td><%= houseguest.walked %></td>
+        <td><%= link_to 'Show', houseguest %></td>
+        <td><%= link_to 'Edit', edit_houseguest_path(houseguest) %></td>
+        <td><%= link_to 'Destroy', houseguest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Houseguest', new_houseguest_path %>

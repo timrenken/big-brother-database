@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  latitude: 
+  longitude: 1.5
+  age: 1
+  occupation: MyString
+  season_id: 1
+  placed: 1
+  votes_against: 1
+  votes_to_win: 1
+  hoh: MyText
+  nominated: MyText
+  veto: MyText
+  botb: MyText
+  have_not: MyText
+  first_day: 1
+  last_day: 1
+  prizes: MyText
+  jury: false
+  expelled: false
+  walked: false
+
+two:
+  name: MyString
+  location: MyString
+  latitude: 
+  longitude: 1.5
+  age: 1
+  occupation: MyString
+  season_id: 1
+  placed: 1
+  votes_against: 1
+  votes_to_win: 1
+  hoh: MyText
+  nominated: MyText
+  veto: MyText
+  botb: MyText
+  have_not: MyText
+  first_day: 1
+  last_day: 1
+  prizes: MyText
+  jury: false
+  expelled: false
+  walked: false

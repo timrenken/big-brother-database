@@ -1,0 +1,101 @@
+<%= form_for(@houseguest) do |f| %>
+  <% if @houseguest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@houseguest.errors.count, "error") %> prohibited this houseguest from being saved:</h2>
+
+      <ul>
+      <% @houseguest.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation %><br>
+    <%= f.text_field :occupation %>
+  </div>
+  <div class="field">
+    <%= f.label :season_id %><br>
+    <%= f.number_field :season_id %>
+  </div>
+  <div class="field">
+    <%= f.label :placed %><br>
+    <%= f.number_field :placed %>
+  </div>
+  <div class="field">
+    <%= f.label :votes_against %><br>
+    <%= f.number_field :votes_against %>
+  </div>
+  <div class="field">
+    <%= f.label :votes_to_win %><br>
+    <%= f.number_field :votes_to_win %>
+  </div>
+  <div class="field">
+    <%= f.label :hoh %><br>
+    <%= f.text_area :hoh %>
+  </div>
+  <div class="field">
+    <%= f.label :nominated %><br>
+    <%= f.text_area :nominated %>
+  </div>
+  <div class="field">
+    <%= f.label :veto %><br>
+    <%= f.text_area :veto %>
+  </div>
+  <div class="field">
+    <%= f.label :botb %><br>
+    <%= f.text_area :botb %>
+  </div>
+  <div class="field">
+    <%= f.label :have_not %><br>
+    <%= f.text_area :have_not %>
+  </div>
+  <div class="field">
+    <%= f.label :first_day %><br>
+    <%= f.number_field :first_day %>
+  </div>
+  <div class="field">
+    <%= f.label :last_day %><br>
+    <%= f.number_field :last_day %>
+  </div>
+  <div class="field">
+    <%= f.label :prizes %><br>
+    <%= f.text_area :prizes %>
+  </div>
+  <div class="field">
+    <%= f.label :jury %><br>
+    <%= f.check_box :jury %>
+  </div>
+  <div class="field">
+    <%= f.label :expelled %><br>
+    <%= f.check_box :expelled %>
+  </div>
+  <div class="field">
+    <%= f.label :walked %><br>
+    <%= f.check_box :walked %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
