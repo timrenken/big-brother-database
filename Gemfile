@@ -24,3 +24,4 @@ group :production do
 end
 
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
+gem 'simple_form', '~> 3.1.0'
