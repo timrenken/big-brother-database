@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="jumbotron">
+  <h1>Big Brother Database</h1>
+  <p>Statistics on all of your favorite Big Brother Houseguests</p>
+  <p>
+    <%= link_to "Map", map_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Houseguests", houseguests_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Seasons", seasons_path, class: "btn btn-lg btn-primary" %>
+  </p>
+</div>
